@@ -1,29 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package list;
 
-/**
- *
- * @author Asus
- */
 import java.util.Scanner; 
 import static java.nio.file.Files.delete;
 import java.util.*;
-public class ArrayList {
-
+public class arrayList {
+    
   public int s;  
   public  int size;
   String[] arr; 
   Scanner sc = new Scanner(System.in);
-    ArrayList()
+    arrayList()
     {
         s = 0;
-        //size = 0;
+        size = 1;
         //Scanner sc = new Scanner(System.in);
-        arr = new String[s];
+        arr = new String[size];
     }
     
     public void enlarge (){       
@@ -77,6 +68,7 @@ public class ArrayList {
                 //System.out.println("Enter the String");
                 //s1 = sc.nextLine();
                 arr[s-1]=s1;
+            System.out.println("s-1 " + (s-1));
 
         }
     }
