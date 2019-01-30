@@ -23,7 +23,7 @@ public class MainClasss {
     public static void menu(){
         System.out.println("options: ");
         int choice;
-        ArrayList a1 = new ArrayList();
+        arrayList a1 = new arrayList();
         Scanner sc = new Scanner(System.in);
         while(true){
             System.out.println(" 1.Add \n 2.Add at any index \n 3.Clear \n 4.Contains \n 5.GetObj \n 6.GetIndex \n 7.RemoveObj \n 8.SetObj \n 9.Size \n 10.print \n 11.exit");
@@ -31,6 +31,7 @@ public class MainClasss {
             if(choice == 1){
                 System.out.println("Enter the String");
                 String s1 = sc.nextLine();
+                s1 = sc.nextLine();
                 a1.add(s1);
             }
             else if(choice == 2){
@@ -84,4 +85,5 @@ public class MainClasss {
             else System.out.println("Wrong input!!!");
         }
     }
+}
 }
